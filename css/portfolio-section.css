@@ -1,0 +1,167 @@
+#portfolio-section{
+    padding: 80px 15px;
+}
+#portfolio-section .title{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#portfolio-section .title .square{
+    background: gray;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 80;
+}
+#portfolio-section .title h1{
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #16171b;
+    z-index: 1;
+    letter-spacing: 4px;
+}
+#portfolio-section .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-gap: .6rem;
+}
+#portfolio-section .portfolio-container .box {
+    background: black;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+#portfolio-section .portfolio-container .box:hover {
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 40px 7xpx 24px rgba(0,0,0,0,0.8);
+    -moz-box-shadow: 0px 40px 7x 24px rgba(0,0,0,0,0.8);
+    box-shadow: 0px 40px 7x 24px rgba(0,0,0,0,0.8);
+}
+#portfolio-section .portfolio-container .box .image .hover-bg{
+    background: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg{
+    background: rgba(255, 255, 255, .4);
+    padding: 10px 20px;
+    
+}
+#portfolio-section .portfolio-container .box .image .hover-bg .title{
+    height: 100%;
+    width: 100%;
+}
+#portfolio-section .portfolio-container .box .image .hover-bg .title .text{
+    background: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transform: translate3d(0,400px,0);
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg .title .text{
+    background: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+/* BOX LOCATIONS */
+#portfolio-section .portfolio-container .box.image1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+#portfolio-section .portfolio-container .box.image1 .image{
+    background: url("https://cdn.dribbble.com/users/6816261/screenshots/16112444/media/91e5661feac1c280bf9a6c6c3679d422.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portfolio-section .portfolio-container .box.image2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+}
+#portfolio-section .portfolio-container .box.image2 .image{
+    background: url("https://cdn.dribbble.com/users/2045817/screenshots/16111797/media/601e3f76be7420140cdf59c556233af7.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portfolio-section .portfolio-container .box.image3{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+#portfolio-section .portfolio-container .box.image3 .image{
+    background: url("https://fwtx.com/downloads/22719/download/coming-soon.png?cb=ef8dbfa3204e40cc01f6514a1781bb25&w=640");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portfolio-section .portfolio-container .box.image4{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#portfolio-section .portfolio-container .box.image4 .image{
+    background: url("https://fwtx.com/downloads/22719/download/coming-soon.png?cb=ef8dbfa3204e40cc01f6514a1781bb25&w=640");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portfolio-section .portfolio-container .box.image5{
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+}
+#portfolio-section .portfolio-container .box.image5 .image{
+    background: url("https://fwtx.com/downloads/22719/download/coming-soon.png?cb=ef8dbfa3204e40cc01f6514a1781bb25&w=640");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portfolio-section .portfolio-container .box.image6{
+    grid-column: 2 / 3;
+    grid-row: 3 / 6;
+}
+#portfolio-section .portfolio-container .box.image6 .image{
+    background: url("https://cdn.dribbble.com/users/1161517/screenshots/14608230/media/09a67185ba4267d2017b425085f55338.gif");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#portfolio-section .portfolio-container .box.image7{
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+}
+#portfolio-section .portfolio-container .box.image7 .image{
+    background: url("https://fwtx.com/downloads/22719/download/coming-soon.png?cb=ef8dbfa3204e40cc01f6514a1781bb25&w=640");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

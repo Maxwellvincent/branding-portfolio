@@ -8,7 +8,7 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    left: -75;
+    left: -75px;
 }
 #experience-section .experience-container{
     display: grid;
@@ -116,4 +116,57 @@
     letter-spacing: 1px;
     display: block;
     line-height: 1.5;
+}
+
+/* Tablet */
+@media only screen and (max-width: 960px) {
+    #experience-section .container .large-title {
+        color: #c6e4ff;
+        font-size: 3rem;
+        left: 0;
+    }
+    #experience-section .experience-container .large-icons {
+        position: relative;
+        top: -30px;
+    }
+    #experience-section .experience-container .large-icons .square {
+        border: 20px solid #52b8ff;
+        padding: 5px;
+        display: inline-block;
+        position: relative;
+        top: 94px;
+        left: 41px;
+    }
+    #experience-section .experience-container .large-icons .circle {
+        border: 20px solid #ffc853;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+        top: 72px;
+        left: 46px;
+    }
+    #experience-section .experience-container .large-icons .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 150px 230px 150px;
+        border-color: transparent transparent #ff5253 transparent;
+        position: relative;
+    }
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 767px) {
+    #experience-section .container .large-title {
+        color: #c6e4ff;
+        font-size: 2.5rem;
+        left: 0;
+    }
+    #experience-section .experience-container {
+        grid-template-columns: 100%;
+    }
+    #experience-section .experience-container .large-icons {
+        display: none;
+    }
 }

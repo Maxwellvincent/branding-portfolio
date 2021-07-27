@@ -17,7 +17,6 @@
     grid-template-rows: 500px 500px;
     grid-gap: 15px;
     overflow: hidden;
-    
 }
 
 #blog-section .blog-container .post {
@@ -114,4 +113,29 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
     
+}
+
+/* Tablet */
+@media only screen and (max-width: 960px) {
+    #blog-section .blog-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px 500px 500px;
+        grid-gap: 15px;
+        overflow: hidden;
+    }
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 767px) {
+    #blog-section .title h1{
+        font-size: 2rem;
+    }
+    #blog-section .blog-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 400px 400px 400px 400px 400px;
+        grid-gap: 15px;
+        overflow: hidden;
+    }
 }

@@ -52,7 +52,7 @@
     
 }
 #top .image .background-image{
-    background: url('../images/SoftwareProfile.jpg');
+    background: url('../../images/SoftwareProfile.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
